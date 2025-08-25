@@ -1,5 +1,5 @@
 ##  NOTE: This code pertains to panels R15.5 - R15.7
-##  To execute code in this file package lme4.0 has to be used. 
+##  To execute code in this file package lme4 has to be used. 
 
 
 ###################################################
@@ -7,7 +7,7 @@
 ###################################################
 options(width=65, digits=5, show.signif.stars = FALSE) 
 date()
-packageVersion("lme4.0")
+packageVersion("lme4")
 packageVersion("Matrix")
 sessionInfo()
 SeedValue <- 17761
@@ -37,7 +37,7 @@ dt0 <- data.frame(i, j)
 ###################################################
 ### code chunk: R15.5
 ###################################################
-require(lme4.0)
+require(lme4)
 fmc <- lmer(y ~ 1 + (1|g1) + (1|g2), data = dtc)
 summary(fmc)
 gf <- getME(fmc, "flist")     # Grouping factors
@@ -76,5 +76,5 @@ max(abs(tcrossprod(L) - PP))       # L_Z*L_Z' = P*(A*A' + I)*P': (13.38)
 
 ### sessionInfo
 sessionInfo()                      # Before detaching packages
-detach(package:lme4.0) 
+detach(package:lme4) 
 

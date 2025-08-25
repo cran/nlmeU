@@ -8,7 +8,7 @@ options(width=65, digits=5,show.signif.stars = FALSE)
 date()
 packageVersion("nlmeU")
 packageVersion("reshape")
-packageVersion("lme4.0")
+packageVersion("lme4")
 packageVersion("RLRsim")
 sessionInfo()
 
@@ -19,7 +19,7 @@ data(armd, package = "nlmeU")
 ###################################################
 ### code chunk: R16.19a
 ###################################################
-library(lme4.0)
+library(lme4)
 
 fm16.1mer  <-                       
    lmer(visual ~ visual0 + time * treat.f + (1|subject),
@@ -50,10 +50,10 @@ VarCorr(fm16.1mer)                    # Estimates of D, Corr(D)
 A <- getME(fm16.1mer, "A")            # A
 I.n <- Diagonal(ncol(A))              # I_N
 V <- sgma^2 * (I.n + crossprod(A))    # V = sigma^2 (I_N + A'A) 
-
+dim(V)
 str(getME(fm16.1mer, "flist"))        # Grouping factor
 
-# V[3:6, 3:6]                         # V_i commented out (see R16.4)
+V[3:6, 3:6]                           # V_i (see R16.4)
 
 
 ###################################################
@@ -241,6 +241,6 @@ exactRLRT(m = mAux,                  # The auxiliary model
 
 sessionInfo()           # with packages attached
 
-detach(package:lme4.0)
+detach(package:lme4)
 detach(package:RLRsim)
 

@@ -45,7 +45,7 @@ names(fxi <- fxd[idx])
 ###################################################
 ### code chunk: R19.3
 ###################################################
-library(lme4.0)
+library(lme4)
 system.time(
 fm19.2mer <- lmer(scorec ~ (1|target) + (1|id), 
     data=fcat)
