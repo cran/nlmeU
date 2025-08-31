@@ -1,5 +1,5 @@
 d41d8cd98f00b204e9800998ecf8427e *ChangeLog
-b00e82f11a15d0060edfd21d5bb931ed *DESCRIPTION
+a4abf5a172b89156ea403afa19f996c8 *DESCRIPTION
 748ecc63fb343b63cf52ac8ebc8e985c *NAMESPACE
 45d42659864dc28e2663f969e5aca9c2 *NEWS.md
 c59a7781129cf9b24b894878dd32fb5d *R/Pwr.R
@@ -135,7 +135,7 @@ fdc25e0e4120b92a72140462e2015e39 *man/fcat.Rd
 632ab99360a90dc02f62fe640aa90bbb *man/logLik1.Rd
 0c3c60d3cc26378f29db6cf248631ddd *man/logLik1.lme.Rd
 ae5022f2f7ad72c5e418f5b1852ec3fb *man/missPat.Rd
-0f6c82ceeba3912e64b0cfbcfdc78d32 *man/nlmeU-package.Rd
+995115c324e5f99de02f459ac6e7d427 *man/nlmeU-package.Rd
 4cfe16dbf2be12f03d4e08484b53b5cf *man/print.Pwr.Rd
 365c6db0d7736af5fe3de7e0983a79c5 *man/prt.Rd
 15d79e163985b245ada8c09bac4c05f4 *man/prt.fiber.Rd
